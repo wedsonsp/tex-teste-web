@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dados do Usuário</title>
+<!-- Utilizando arquivos externos -->
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="js/alteradados.js">
+
+</head>
+
+<body>
+
+<form action="form.html" method="post" accept-charset="utf-8" class="form-horizontal form-login" col-md-12>
+<fieldset>
+
+<!-- Form Name -->
+<legend>Formulário Padrão</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Usuário">Usuário</label>  
+  <div class="col-md-2">
+  <input id="usuario" name="usuario" type="text" placeholder="Digite o seu usuário" class="form-control input-md" required="" onBlur="PassaValor()">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="senha">Senha</label>
+  <div class="col-md-2">
+    <input id="senha" name="senha" type="password" placeholder="Digite sua senha" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="confirmsenha">Confirme Senha</label>
+  <div class="col-md-1">
+    <input id="confirmsenha" name="confirmsenha" type="password" placeholder="Confirme a sua senha" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dicasenha">Dica de Senha</label>  
+  <div class="col-md-1">
+  <input id="dicasenha" name="dicasenha" type="text" placeholder="Dica de Senha" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="primeironome">Primeiro Nome</label>  
+  <div class="col-md-2">
+  <input id="primeironome" name="primeironome" type="text" placeholder="Digite seu nome" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="sobrenome">Sobrenome</label>  
+  <div class="col-md-2">
+  <input id="sobrenome" name="sobrenome" type="text" placeholder="Digite seu Sobre Nome" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-2">
+  <input id="email" name="email" type="email" placeholder="Digite seu email" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="sexo">Sexo</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="sexo-0">
+      <input type="radio" name="sexo" id="sexo-0" value="M" checked="checked">
+      M
+    </label> 
+    <label class="radio-inline" for="sexo-1">
+      <input type="radio" name="sexo" id="sexo-1" value="F">
+      F
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Esportes">Esportes</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="Esportes-0">
+      <input type="checkbox" name="Esportes" id="Esportes-0" value="1">
+      Futebol
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Esportes-1">
+      <input type="checkbox" name="Esportes" id="Esportes-1" value="2">
+      Basquete
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Esportes-2">
+      <input type="checkbox" name="Esportes" id="Esportes-2" value="3">
+      Vôlei
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Esportes-3">
+      <input type="checkbox" name="Esportes" id="Esportes-3" value="4">
+      Tênis
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Esportes-4">
+      <input type="checkbox" name="Esportes" id="Esportes-4" value="5">
+      Outros
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="acesso">Perfil de Acesso</label>
+  <div class="col-md-2">
+    <select id="acesso" name="acesso" class="form-control">
+      <option value="adm">ADMIN</option>
+      <option value="user">USER</option>
+    </select>
+  </div>
+</div>	
+
+<!-- Button (Double) -->
+<div class="form-group"> 
+  <label class="col-md-4 control-label" for="salvar"></label>
+  <div class="col-md-4">
+  <!--Botões utiliando Collapse   -->
+    <tr>
+        <td><a  class = "btn btn-primary"  role= "button"  data-toggle= "collapse"  href= "users.html" 
+        aria-expanded="false"  aria-controls= "collapseExample">Salvar</a>          			
+        </td>
+    </tr>
+    <tr>
+        <td><a  class = "btn btn-warning"  role= "button"  data-toggle= "collapse"  href= "" 
+        aria-expanded="false"  aria-controls= "collapseExample">Excluir</a>          			
+        </td>
+    </tr>
+    <tr>
+        <td><a  class = "btn btn-danger"  role= "button"  data-toggle= "collapse"  href= "index.html" 
+        aria-expanded="false"  aria-controls= "collapseExample">Cancelar</a>          			
+        </td>
+    </tr>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding-top: 40px;
+	padding-botton: 10px;
+	background-color: #eee;
+}
+
+.form-login .form-login-heading,
+.form-login .checkbox{
+	margin-bottom: 20px;
+	
+}
+
+.form-login .form-control{
+	position: relative;
+	height: auto;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+	
+}
+
+.form-login .form-control:focus{
+	z-index: 2;	
+}
+
+.form-login input[type="email"]{
+	margin-bottom: 20px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;	
+	
+}
+
+.form-login input[type="password"]{
+	margin-bottom: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;	
+}
+
+.painel-default{
+	max-width: 380px;
+	background-color: #B30C0F;
+	
+}
+
+
+.painel-title{
+	background-color: #0BD9A9;
+	
+}
+
+.teste{
+	padding-top: 25px;
+	background-color: #BBB5B5;
+	margin: 0 auto;
+	float: none; 
+	border: 1px solid #97694F;
+	height:400px;
+}
+
+.teste2{
+	background-color: #FFFFFF;
+	border: 1px solid #97694F;
+}
+
+.tamanho-botao{
+	max-width: 100px;
+	margin-bottom: 20px;
+}
+
+.borausuario{
+		
+}
+
+.tamanhodobotao{
+	max-width: 28px;
+}
+
+.textobotao{
+	color: #F4F0F0;
+}
